@@ -238,7 +238,7 @@ const Portfolio = () => {
                                     transitionDuration={1500}
                                     scrollContainerClassName="project-card-scroll">
                                     {
-                                        PreviousProject?.map((item, index) => {
+                                        PreviousProject?.map((item) => {
                                             return (
                                                 <div key={item?.id} className="project-card-wrapper">
                                                     <div className="project-img" key="key">

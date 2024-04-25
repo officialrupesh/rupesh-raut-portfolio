@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { scaleFont, scaleValue } from "../utils";
+// import { scaleFont, scaleValue } from "../utils";
 import { COLORS } from "../Constants";
 
 export const HeroSectionStyled = styled.section`
