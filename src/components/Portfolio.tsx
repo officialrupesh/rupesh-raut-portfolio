@@ -2,8 +2,12 @@ import { HeroSectionStyled, MainSectionStyled, WorkSectionStyled } from "../styl
 import { useTypewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { Carousel } from "antd";
-import { skillsIcon } from "../assets/icons/SkillIcon";
+import { Button, Carousel } from "antd";
+import { PreviousProject, skillsIcon } from "../assets/icons/SkillIcon";
+import { ScrollMenu } from "react-horizontal-scrolling-menu";
+import { LeftArrow, RightArrow } from "./HorizontalScroll";
+import { LuExternalLink } from "react-icons/lu";
+
 
 
 const skills = [
@@ -84,6 +88,34 @@ const Portfolio = () => {
         //     setActiveIndex(next);
         //     triggerAnimation();
         // },
+        responsive: [
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 6,
+                },
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
+            {
+                breakpoint: 428,
+                settings: {
+                    slidesToShow: 3,
+                },
+            },
+
+        ]
+
     };
 
 
@@ -198,18 +230,40 @@ const Portfolio = () => {
                                 <h2 className="section-title">Previous Works</h2>
                                 <p className="section-title-desc">These are the projects I've recently worked on</p>
                             </div>
-                            <div className="section-body">
-                                <div className="project-card-wrapper">
-                                    <div className="project-img">
-                                        <img src="https://english.makalukhabar.com/wp-content/uploads/2023/06/NBANK-K.jpg" />
-                                        <div className="project-card-overlay"></div>
-                                        <div className="project-card-content">
-                                            <p className="category">Bank</p>
-                                            <h6 className="project-title">Nabil Bank ltd</h6>
-                                        </div>
-                                    </div>
+                            <div className="previous-work-section-body">
+                                <ScrollMenu
+                                    LeftArrow={LeftArrow}
+                                    RightArrow={RightArrow}
+                                    transitionBehavior="smooth"
+                                    transitionDuration={1500}
+                                    scrollContainerClassName="project-card-scroll">
+                                    {
+                                        PreviousProject?.map((item, index) => {
+                                            return (
+                                                <div key={item?.id} className="project-card-wrapper">
+                                                    <div className="project-img" key="key">
+                                                        <img src={item?.projectCoverImg} alt={`${item?.projectName} | ${item?.projectCategory}`}/>
+                                                        <div className="project-card-overlay"></div>
+                                                        <div className="project-card-content">
+                                                            <h6 className="project-title">{item?.projectName}</h6>
+                                                            <p className="project-category">{item?.projectCategory}</p>
+                                                            {item?.externalLink &&
+                                                            <a href={item?.externalLink} target="_blank"> <Button type="link" style={{ color: "#ffffff" }}><LuExternalLink /></Button>
+                                                            </a>
+                                                            }
 
-                                </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            )
+                                        })
+                                    }
+
+
+
+                                </ScrollMenu>
 
                             </div>
 

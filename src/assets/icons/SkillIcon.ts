@@ -11,6 +11,9 @@ import mongo from './mongo.png';
 import jquery from './jquery.jpg';
 import antd from './antd.png';
 import mui from './mui.png';
+import nBank from '../images/nbank.jpg';
+import nica from '../images/nica.jpg';
+import snpl from '../images/snpl.jpg';
 
 
 export const skillsIcon = [
@@ -79,5 +82,40 @@ export const skillsIcon = [
     id: 13,
     skillName: mui,
     title:"Material UI"
+  },
+];
+
+export const PreviousProject = [
+  {
+    id: 1,
+    projectName: "Nabil Bank Ltd",
+    projectCategory: "Bank",
+    freelance: false,
+    externalLink: "https://www.nabilbank.com",
+    projectCoverImg: nBank,
+  },
+  {
+    id: 2,
+    projectName: "NIC Asia Bank Ltd",
+    projectCategory: "Bank",
+    freelance: false,
+    externalLink: "https://www.nicasiabank.com",
+    projectCoverImg: nica,
+  },
+  {
+    id: 3,
+    projectName: "Surya Nepal Employee Healthcare System",
+    projectCategory: "CMS",
+    freelance: false,
+    externalLink: "",
+    projectCoverImg: snpl,
+  },
+  {
+    id: 4,
+    projectName: "Tisa Bank Ltd (PNG)",
+    projectCategory: "Bank",
+    freelance: false,
+    externalLink: "",
+    projectCoverImg: nica,
   },
 ];

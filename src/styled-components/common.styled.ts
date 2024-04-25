@@ -155,51 +155,65 @@ export const WorkSectionStyled = styled.div`
     &-img {
       height: 220px;
       width: 320px;
+      overflow: hidden;
       position: relative;
       img {
         height: 100%;
         width: 100%;
         object-fit: cover;
+        transition: 0.4s;
       }
     }
     &-card {
       &-wrapper {
         margin-bottom: 30px;
+        margin-inline: 24px;
         &:hover {
+          .project-img {
+            img {
+              transform: scale(1.09);
+            }
+          }
           .project-card-overlay {
             position: absolute;
             left: 0;
             top: 0;
             height: 100%;
             width: 100%;
-            background: orange;
+            background: ${COLORS.Blue};
             opacity: 0.9;
             transition: opacity 0.3s;
-            z-index: 99;
+            z-index: 9;
           }
-          .project-card-content{
+          .project-card-content {
             opacity: 1;
+            color: ${COLORS.White};
           }
         }
       }
-      &-overlay{
+      &-overlay {
         opacity: 0;
       }
-      &-content{
+      &-content {
         position: absolute;
         height: 100%;
         width: 100%;
         top: 0;
-        left: 0 ;
+        left: 0;
         opacity: 0;
         transition: opacity 0.2s;
-        z-index: 99;
-        display:flex;
+        z-index: 10;
+        display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
         padding: 12px;
       }
+    }
+    &-category{
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
     }
   }
 `;
