@@ -1,4 +1,4 @@
-import { HeroSectionStyled, MainSectionStyled, WorkSectionStyled } from "../styled-components/common.styled"
+import { ContactMeStyled, HeroSectionStyled, MainSectionStyled, WorkSectionStyled } from "../styled-components/common.styled"
 import { useTypewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
@@ -242,14 +242,14 @@ const Portfolio = () => {
                                             return (
                                                 <div key={item?.id} className="project-card-wrapper">
                                                     <div className="project-img" key="key">
-                                                        <img src={item?.projectCoverImg} alt={`${item?.projectName} | ${item?.projectCategory}`}/>
+                                                        <img src={item?.projectCoverImg} alt={`${item?.projectName} | ${item?.projectCategory}`} />
                                                         <div className="project-card-overlay"></div>
                                                         <div className="project-card-content">
                                                             <h6 className="project-title">{item?.projectName}</h6>
                                                             <p className="project-category">{item?.projectCategory}</p>
                                                             {item?.externalLink &&
-                                                            <a href={item?.externalLink} target="_blank"> <Button type="link" style={{ color: "#ffffff" }}><LuExternalLink /></Button>
-                                                            </a>
+                                                                <a href={item?.externalLink} target="_blank"> <Button type="link" style={{ color: "#ffffff" }}><LuExternalLink /></Button>
+                                                                </a>
                                                             }
 
                                                         </div>
@@ -268,6 +268,20 @@ const Portfolio = () => {
                             </div>
 
                         </WorkSectionStyled>
+
+                    </section>
+                    <section id="contact-me" className="section-wrapper contact">
+                        <ContactMeStyled>
+                            <div className="section-head">
+                                <h2 className="section-title">Contact Me</h2>
+                                <p className="section-title-desc">Lets Connect for any interesting projects</p>
+                            </div>
+
+                            <div className="contact-me-section-body">
+
+
+                            </div>
+                        </ContactMeStyled>
 
                     </section>
 

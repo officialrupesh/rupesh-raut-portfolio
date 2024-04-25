@@ -216,4 +216,6 @@ export const WorkSectionStyled = styled.div`
       bottom: 10px;
     }
   }
-`;
+  `;
+  export const ContactMeStyled = styled.div`
+  `
