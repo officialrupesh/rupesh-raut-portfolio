@@ -5,7 +5,8 @@ import { COLORS } from "../Constants";
 export const HeroSectionStyled = styled.section`
   height: 100vh;
   width: 100%;
-  background: url("../src/assets/icons/herobg.jpg");
+  /* background: url("../src/assets/icons/herobg.jpg"); */
+  background: url("https://i.imgur.com/cXo8ZAi.jpeg");
   background-size: cover;
   position: relative;
   display: flex;
