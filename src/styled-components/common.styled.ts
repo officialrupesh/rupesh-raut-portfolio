@@ -207,7 +207,8 @@ export const WorkSectionStyled = styled.div`
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
+        text-align: center;
         padding: 12px;
       }
     }
@@ -216,6 +217,9 @@ export const WorkSectionStyled = styled.div`
       right: 10px;
       bottom: 10px;
     }
+  &-title{
+    margin-bottom: 4px;
+  }
   }
   `;
   export const ContactMeStyled = styled.div`

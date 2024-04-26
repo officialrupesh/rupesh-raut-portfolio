@@ -245,12 +245,28 @@ const Portfolio = () => {
                                                         <img src={item?.projectCoverImg} alt={`${item?.projectName} | ${item?.projectCategory}`} />
                                                         <div className="project-card-overlay"></div>
                                                         <div className="project-card-content">
-                                                            <h6 className="project-title">{item?.projectName}</h6>
-                                                            <p className="project-category">{item?.projectCategory}</p>
-                                                            {item?.externalLink &&
-                                                                <a href={item?.externalLink} target="_blank"> <Button type="link" style={{ color: "#ffffff" }}><LuExternalLink /></Button>
-                                                                </a>
-                                                            }
+                                                            <div className="project-card-content-top">
+                                                                <h6 className="project-title">{item?.projectName}</h6>
+                                                                <div className="project-tech-used">
+                                                                    <h6 className="text-start mb-1">UI Toolkit Used:</h6>
+                                                                    <div className="project-tech-used-tag-wrapper text-start d-flex flex-wrap">
+                                                                        {item?.uiToolkit?.map((tech, index) => {
+                                                                            return (
+                                                                                <p className="project-tech-used-tag" style={{ fontSize:"13px",padding:"3px",background:"#ffffff",color:"#06529e",borderRadius:"3px",marginRight:"4px",marginBottom:"4px" }} key={index}>{tech}</p>
+                                                                            )
+                                                                        })}
+
+                                                                    </div>
+                                                                </div>
+                                                                <p className="project-category">{item?.projectCategory}</p>
+                                                            </div>
+                                                            <div className="project-card-content-bottom">
+
+                                                                {item?.externalLink &&
+                                                                    <a href={item?.externalLink} target="_blank"> <Button type="link" style={{ color: "#ffffff" }}><LuExternalLink /></Button>
+                                                                    </a>
+                                                                }
+                                                            </div>
 
                                                         </div>
                                                     </div>
