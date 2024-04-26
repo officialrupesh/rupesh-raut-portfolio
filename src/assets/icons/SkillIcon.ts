@@ -14,6 +14,10 @@ import mui from './mui.png';
 import nBank from '../images/nbank.jpg';
 import nica from '../images/nica.jpg';
 import snpl from '../images/snpl.jpg';
+import tisa from '../images/tisaBank.jpg';
+import truetalent from '../images/truetalent.png';
+import aibot from "../images/genAIBot.png";
+import jbbl from "../images/jbbl.png";
 
 
 export const skillsIcon = [
@@ -45,7 +49,7 @@ export const skillsIcon = [
   {
     id: 6,
     skillName: styledComponents,
-    title: "Styled Components",
+    title: "StyledComponents",
   },
   {
     id: 7,
@@ -93,6 +97,13 @@ export const PreviousProject = [
     freelance: false,
     externalLink: "https://www.nabilbank.com",
     projectCoverImg: nBank,
+    uiToolkit: [
+      "React.js",
+      "React Query",
+      "Styled-Components",
+      "Ant Design",
+      "bootstrap",
+    ],
   },
   {
     id: 2,
@@ -101,6 +112,13 @@ export const PreviousProject = [
     freelance: false,
     externalLink: "https://www.nicasiabank.com",
     projectCoverImg: nica,
+    uiToolkit: [
+      "React.js",
+      "React Query",
+      "Styled-Components",
+      "Ant Design",
+      "bootstrap",
+    ],
   },
   {
     id: 3,
@@ -109,6 +127,13 @@ export const PreviousProject = [
     freelance: false,
     externalLink: "",
     projectCoverImg: snpl,
+    uiToolkit: [
+      "React.js",
+      "React Query",
+      "Styled-Components",
+      "Ant Design",
+      "bootstrap",
+    ],
   },
   {
     id: 4,
@@ -116,6 +141,46 @@ export const PreviousProject = [
     projectCategory: "Bank",
     freelance: false,
     externalLink: "",
-    projectCoverImg: nica,
+    projectCoverImg: tisa,
+    uiToolkit: [
+      "React.js",
+      "React Query",
+      "Styled-Components",
+      "Ant Design",
+      "bootstrap",
+    ],
+  },
+  {
+    id: 5,
+    projectName: "Jyoti Bikash Bank Limited",
+    projectCategory: "Bank",
+    freelance: false,
+    externalLink: "",
+    projectCoverImg: jbbl,
+    uiToolkit: [
+      "React.js",
+      "Tanstack Query",
+      "Styled-Components",
+      "Ant Design",
+      "bootstrap",
+    ],
+  },
+  {
+    id: 6,
+    projectName: "Gen AI Chatbot",
+    projectCategory: "AI | CMS",
+    freelance: false,
+    externalLink: "",
+    projectCoverImg: aibot,
+    uiToolkit: ["React.js", "React Query", "Material UI", "Styled-Components"],
+  },
+  {
+    id: 6,
+    projectName: "Truetalent",
+    projectCategory: "Job Portal | CV Maker",
+    freelance: false,
+    externalLink: "https://truetalent.io/",
+    projectCoverImg: truetalent,
+    uiToolkit: ["Bootstrap", "CSS", "Sass", "Chakra UI"],
   },
 ];
