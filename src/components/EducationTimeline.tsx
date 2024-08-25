@@ -35,7 +35,7 @@ const EducationTimeline = () => {
                             </>),
                         },
                         {
-                            label: 'June 2024 - Present',
+                            label: 'Nov 2017 - Mar 2023',
                             color: "#06529e",
                             children: (<><strong>Bachelor Of Engineering in Information Technology</strong>
                             <p><em> <span style={{ fontWeight: "500" }}>74.17%</span> </em></p>

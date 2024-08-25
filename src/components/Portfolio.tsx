@@ -134,7 +134,7 @@ const Portfolio = () => {
                         <a href="https://github.com/officialrupesh" target="_blank" className="social-link">
                             <FaGithub />
                         </a>
-                        <a href="mailto:iamrupeshraut1@gmail.com"  className="social-link">
+                        <a href="mailto:iamrupeshraut1@gmail.com" className="social-link">
                             <IoMail />
 
                         </a>
@@ -178,12 +178,6 @@ const Portfolio = () => {
 
                         </div>
 
-                    </section>
-                    <section id="experience" className="section-wrapper">
-                        <TimelineSection />
-                    </section>
-                    <section id="education" className="section-wrapper">
-                        <EducationTimeline />
                     </section>
                     <section id="skills" className="section-wrapper">
                         <div className="section-head">
@@ -232,6 +226,13 @@ const Portfolio = () => {
                         </div>
 
                     </section>
+                    <section id="experience" className="section-wrapper">
+                        <TimelineSection />
+                    </section>
+                    <section id="education" className="section-wrapper">
+                        <EducationTimeline />
+                    </section>
+
                     <section id="projects-worked" className="section-wrapper">
                         <WorkSectionStyled>
                             <div className="section-head">
@@ -260,7 +261,7 @@ const Portfolio = () => {
                                                                     <div className="project-tech-used-tag-wrapper text-start d-flex flex-wrap">
                                                                         {item?.uiToolkit?.map((tech, index) => {
                                                                             return (
-                                                                                <p className="project-tech-used-tag" style={{ fontSize:"13px",padding:"3px",background:"#ffffff",color:"#06529e",borderRadius:"3px",marginRight:"4px",marginBottom:"4px" }} key={index}>{tech}</p>
+                                                                                <p className="project-tech-used-tag" style={{ fontSize: "13px", padding: "3px", background: "#ffffff", color: "#06529e", borderRadius: "3px", marginRight: "4px", marginBottom: "4px" }} key={index}>{tech}</p>
                                                                             )
                                                                         })}
 
