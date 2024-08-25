@@ -18,6 +18,7 @@ import tisa from '../images/tisaBank.jpg';
 import truetalent from '../images/truetalent.png';
 import aibot from "../images/genAIBot.png";
 import jbbl from "../images/jbbl.png";
+import pillaxia from "../images/pillaxia.png"
 
 
 export const skillsIcon = [
@@ -182,5 +183,14 @@ export const PreviousProject = [
     externalLink: "https://truetalent.io/",
     projectCoverImg: truetalent,
     uiToolkit: ["Bootstrap", "CSS", "Sass", "Chakra UI"],
+  },
+  {
+    id: 7,
+    projectName: "Pillaxia",
+    projectCategory: "Landing Page Website",
+    freelance: true,
+    externalLink: "https://pillaxia.vercel.app/",
+    projectCoverImg: pillaxia,
+    uiToolkit: ["React.js","Bootstrap", "CSS", "Sass","React Animate on Scroll"],
   },
 ];

@@ -7,6 +7,8 @@ import { PreviousProject, skillsIcon } from "../assets/icons/SkillIcon";
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import { LeftArrow, RightArrow } from "./HorizontalScroll";
 import { LuExternalLink } from "react-icons/lu";
+import TimelineSection from "./Timeline";
+import EducationTimeline from "./EducationTimeline";
 
 
 
@@ -126,13 +128,13 @@ const Portfolio = () => {
                     <h1>Rupesh Raut</h1>
                     <p className="description">I am <span className="typewriter">{text}</span></p>
                     <div className="social-links">
-                        <a href="" className="social-link" >
+                        <a href="https://www.linkedin.com/in/therupeshraut/" target="_blank" className="social-link" >
                             <FaLinkedinIn />
                         </a>
-                        <a href="" className="social-link">
+                        <a href="https://github.com/officialrupesh" target="_blank" className="social-link">
                             <FaGithub />
                         </a>
-                        <a href="" className="social-link">
+                        <a href="mailto:iamrupeshraut1@gmail.com"  className="social-link">
                             <IoMail />
 
                         </a>
@@ -176,6 +178,12 @@ const Portfolio = () => {
 
                         </div>
 
+                    </section>
+                    <section id="experience" className="section-wrapper">
+                        <TimelineSection />
+                    </section>
+                    <section id="education" className="section-wrapper">
+                        <EducationTimeline />
                     </section>
                     <section id="skills" className="section-wrapper">
                         <div className="section-head">
@@ -236,7 +244,7 @@ const Portfolio = () => {
                                     RightArrow={RightArrow}
                                     transitionBehavior="smooth"
                                     transitionDuration={1500}
-                                    scrollContainerClassName="project-card-scroll">
+                                    scrollContainerClassName="project-card-scroll" >
                                     {
                                         PreviousProject?.map((item) => {
                                             return (
