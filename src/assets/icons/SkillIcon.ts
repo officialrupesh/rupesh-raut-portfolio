@@ -18,9 +18,11 @@ import tisa from '../images/tisaBank.jpg';
 import truetalent from '../images/truetalent.png';
 import aibot from "../images/genAIBot.png";
 import jbbl from "../images/jbbl.png";
-import pillaxia from "../images/pillaxia.png"
-
-
+import pillaxia from "../images/pillaxia.png";
+import GeneralLicensedEngineer from "../images/licenses/1722910326157.jpeg";
+import FlaskAPI from "../images/licenses/udemy-rest-api-flask.jpg";
+import reviewImg from "../images/licenses/udemy-rest-api-flask.jpg";
+import placeholderImg from "../icons/placeholder.jpg";
 export const skillsIcon = [
   {
     id: 1,
@@ -192,5 +194,30 @@ export const PreviousProject = [
     externalLink: "https://pillaxia.vercel.app/",
     projectCoverImg: pillaxia,
     uiToolkit: ["React.js","Bootstrap", "CSS", "Sass","React Animate on Scroll"],
+  },
+];
+export const LicenseCertificate = [
+  {
+    id: 1,
+    title: "General Licensed Engineer",
+    projectCoverImg: GeneralLicensedEngineer,
+  },
+  {
+    id: 2,
+    title: "Rest APIs with Flask and Python",
+    projectCoverImg: FlaskAPI,
+  },
+];
+
+export const ReviewData = [
+  {
+    placeholderImg: placeholderImg,
+    // reviewerImg: reviewImg,
+    reviewerName: "John Doe",
+    reviewerRelation: "Rupesh's Bachelors classmate",
+    reviewersReview:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    // starImg: reviewStarImg,
+    starValue: "5.0 rating",
   },
 ];

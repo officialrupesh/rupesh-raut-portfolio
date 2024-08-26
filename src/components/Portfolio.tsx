@@ -2,13 +2,15 @@ import { ContactMeStyled, HeroSectionStyled, MainSectionStyled, WorkSectionStyle
 import { useTypewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { Button, Carousel } from "antd";
-import { PreviousProject, skillsIcon } from "../assets/icons/SkillIcon";
+import { Button, Carousel, Image } from "antd";
+import { LicenseCertificate, PreviousProject, skillsIcon } from "../assets/icons/SkillIcon";
 import { ScrollMenu } from "react-horizontal-scrolling-menu";
 import { LeftArrow, RightArrow } from "./HorizontalScroll";
 import { LuExternalLink } from "react-icons/lu";
 import TimelineSection from "./Timeline";
 import EducationTimeline from "./EducationTimeline";
+import ContactSection from "./ContactSection";
+import ReviewSection from "./ReviewSection";
 
 
 
@@ -125,7 +127,7 @@ const Portfolio = () => {
         <>
             <HeroSectionStyled id="hero" className="hero-section">
                 <div className="container content">
-                    <h1>Rupesh Raut</h1>
+                    <h1>Er. Rupesh Raut</h1>
                     <p className="description">I am <span className="typewriter">{text}</span></p>
                     <div className="social-links">
                         <a href="https://www.linkedin.com/in/therupeshraut/" target="_blank" className="social-link" >
@@ -295,7 +297,48 @@ const Portfolio = () => {
                         </WorkSectionStyled>
 
                     </section>
-                    <section id="contact-me" className="section-wrapper contact">
+
+                    <section id="licenses-certification" className="section-wrapper">
+                        <WorkSectionStyled className="licenses-certificate">
+                            <div className="section-head">
+                                <h2 className="section-title">Licenses & Certification</h2>
+                                <p className="section-title-desc">These are the Licenses and Certificates I have earned till now</p>
+                            </div>
+                            <div className="previous-work-section-body">
+                                <ScrollMenu
+                                    LeftArrow={LeftArrow}
+                                    RightArrow={RightArrow}
+                                    transitionBehavior="smooth"
+                                    transitionDuration={1500}
+                                    scrollContainerClassName="project-card-scroll" >
+                                    {
+                                        LicenseCertificate?.map((item) => {
+                                            return (
+                                                <div key={item?.id} className="project-card-wrapper">
+                                                    <div className="project-img" key="key">
+                                                        <Image className="certificate-img" height={"220px"} width={"320px"} preview={{ src: item?.projectCoverImg }} src={item?.projectCoverImg} alt={`${item?.title} | ""`} />
+                                                        <h6 className="certificate-title">{item?.title && item.title}</h6>
+                                                        {/* <img src={item?.projectCoverImg} alt={`${item?.projectName} | ${item?.projectCategory}`} /> */}
+                                                        {/* <div className="project-card-overlay"></div> */}
+                                                        
+                                                    </div>
+
+                                                </div>
+
+                                            )
+                                        })
+                                    }
+
+
+
+                                </ScrollMenu>
+
+                            </div>
+
+                        </WorkSectionStyled>
+
+                    </section>
+                    {/* <section id="contact-me" className="section-wrapper contact">
                         <ContactMeStyled>
                             <div className="section-head">
                                 <h2 className="section-title">Contact Me</h2>
@@ -308,11 +351,11 @@ const Portfolio = () => {
                             </div>
                         </ContactMeStyled>
 
-                    </section>
-
+                    </section> */}
                 </div>
-
             </MainSectionStyled>
+            <ReviewSection />
+            <ContactSection />  
         </>
     )
 }
