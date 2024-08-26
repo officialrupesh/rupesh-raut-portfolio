@@ -21,7 +21,6 @@ import jbbl from "../images/jbbl.png";
 import pillaxia from "../images/pillaxia.png";
 import GeneralLicensedEngineer from "../images/licenses/1722910326157.jpeg";
 import FlaskAPI from "../images/licenses/udemy-rest-api-flask.jpg";
-import reviewImg from "../images/licenses/udemy-rest-api-flask.jpg";
 import placeholderImg from "../icons/placeholder.jpg";
 export const skillsIcon = [
   {

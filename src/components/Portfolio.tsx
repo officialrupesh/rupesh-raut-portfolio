@@ -1,4 +1,4 @@
-import { ContactMeStyled, HeroSectionStyled, MainSectionStyled, WorkSectionStyled } from "../styled-components/common.styled"
+import {HeroSectionStyled, MainSectionStyled, WorkSectionStyled } from "../styled-components/common.styled"
 import { useTypewriter } from 'react-simple-typewriter'
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
