@@ -219,4 +219,14 @@ export const ReviewData = [
     // starImg: reviewStarImg,
     starValue: "5.0 rating",
   },
+  {
+    placeholderImg: placeholderImg,
+    // reviewerImg: reviewImg,
+    reviewerName: "John Doe",
+    reviewerRelation: "Rupesh's Bachelors classmate",
+    reviewersReview:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.",
+    // starImg: reviewStarImg,
+    starValue: "5.0 rating",
+  },
 ];

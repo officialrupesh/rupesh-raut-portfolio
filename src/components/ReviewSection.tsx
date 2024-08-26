@@ -30,10 +30,10 @@ const ReviewSection = () => {
 
             </div>
         ),
-        // customPaging: (i: any) => (
-        //     <div>
-        //     </div>
-        // )
+        customPaging: () => (
+            <div>
+            </div>
+        )
     };
 
     return (
