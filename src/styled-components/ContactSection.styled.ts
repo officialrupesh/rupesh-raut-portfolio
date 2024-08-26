@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import formBg from "../assets/form-bg.png";
 
 export const ContactSectionStyled = styled.section`
   background: radial-gradient(circle, #070086 0%, #050069 40%, #02004b 100%);
@@ -8,7 +9,7 @@ export const ContactSectionStyled = styled.section`
     object-fit: contain;
   }
   .form-wrapper {
-    background: url("/../../src/assets/icons/form-bg.png") no-repeat;
+    background: url(${formBg}) no-repeat;
     padding: 30px;
     background-size: cover;
   }

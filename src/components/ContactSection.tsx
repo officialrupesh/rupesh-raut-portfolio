@@ -1,4 +1,5 @@
 import { ContactSectionStyled } from "../styled-components/ContactSection.styled"
+import contactAvatar from "../assets/contact-avatar.png";
 
 const ContactSection = () => {
     return (
@@ -12,7 +13,7 @@ const ContactSection = () => {
                                 <p className="section-title-desc">Lets Connect for any interesting projects</p>
                             </div>
                             <div className="contact-img">
-                                <img className="img-fluid" src={"../../src/assets/icons/contact-avatar.png"} alt="contact avatar" height={500} width={430} />
+                                <img className="img-fluid" src={contactAvatar} alt="contact avatar" height={500} width={430} />
                             </div>
                         </div>
                         <div className="col-12 col-lg-6 mt-5 mt-lg-0">
