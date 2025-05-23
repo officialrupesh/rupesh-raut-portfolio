@@ -13,6 +13,34 @@ const TimelineSection = () => {
                     mode={'left'}
                     items={[
                         {
+                            label: 'April 2025 - Present',
+                            color: "#06529e",
+                            children: (<><strong>Actively seeking Werkstudent or part-time opportunities in:</strong>
+                                <p><em>- Frontend Development (React, JavaScript, HTML/CSS)</em></p>
+                                <p><em>- UI/UX Engineering</em></p>
+                                <p><em>- Software Engineering (Web-focused)</em></p>
+                            </>),
+                        },
+                        {
+                            label: 'June 2024 - Jan 2025',
+                            color: "#06529e",
+                            children: (<><strong>Freelance Software Engineer</strong>
+                                <p><em>- UI Development</em></p>
+                                <p><em>- Frontend Development</em></p>
+                                <p><em>- Backend Development (Learning in progress)</em></p>
+                            </>),
+                        },
+                        {
+                            label: 'April 2023 - June 2024',
+                            color: "#06529e",
+                            children: (<><strong>Associate Frontend Developer</strong> <p>Amnil Technologies Pvt. Ltd.</p>
+
+                                <p><em>- Developed reusable UI components, reducing redundancy and enhancing maintainability. </em></p>
+                                <p><em>- Implemented robust styling using CSS-in-JS and traditional CSS for responsive designs. </em></p>
+                                <p><em>- Optimized performance through code refactoring and efficient state management. </em></p>
+                            </>),
+                        },
+                        {
                             label: 'January 2023 - April 2023',
                             color: "#06529e",
                             children: (
@@ -22,25 +50,8 @@ const TimelineSection = () => {
 
                                      </>),
                         },
-                        {
-                            label: 'April 2023 - June 2024',
-                            color: "#06529e",
-                            children: (<><strong>Associate Frontend Developer</strong> <p>Amnil Technologies Pvt. Ltd.</p>
-                            
-                                <p><em>- Developed reusable UI components, reducing redundancy and enhancing maintainability. </em></p>
-                                <p><em>- Implemented robust styling using CSS-in-JS and traditional CSS for responsive designs. </em></p>
-                                <p><em>- Optimized performance through code refactoring and efficient state management. </em></p>
-                              </>),
-                        },
-                        {
-                            label: 'June 2024 - Present',
-                            color: "#06529e",
-                            children: (<><strong>Freelance Software Engineer</strong>
-                                <p><em>- UI Development</em></p>
-                                <p><em>- Frontend Development</em></p>
-                                <p><em>- Backend Development (Learning in progress)</em></p>
-                            </>),
-                        },
+                      
+                        
 
                     ]}
                 />
