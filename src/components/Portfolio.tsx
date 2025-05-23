@@ -136,7 +136,7 @@ const Portfolio = () => {
                         <a href="https://github.com/officialrupesh" target="_blank" className="social-link">
                             <FaGithub />
                         </a>
-                        <a href="mailto:iamrupeshraut1@gmail.com" className="social-link">
+                        <a href="mailto:raut.rupesh2056@gmail.com" className="social-link">
                             <IoMail />
 
                         </a>
@@ -153,13 +153,13 @@ const Portfolio = () => {
                             <h2 className="section-title">About</h2>
                         </div>
                         <div className="section-body">
-                            <h4 className="position">Frontend Developer | UI/UX Developer</h4>
+                            <h4 className="position">Frontend Developer | UI/UX Engineer</h4>
                             <p className="section-body-content">
                                 {/* Rupesh Raut is a diligent and innovative UI/UX Developer with over a year of
                                 experience and dedicated to crafting engaging user-centric
                                 interfaces. Committed to staying updated with industry trends to
                                 continually enhance skills and deliver high-quality solutions. */}
-                                Rupesh Raut is a diligent and innovative UI/UX Developer with over a year of experience,
+                                Rupesh Raut is a diligent and innovative Frontend Developer with over two years of experience,
                                 specializing in crafting engaging user-centric interfaces.
                                 He is proficient in frontend technologies such as HTML, CSS, JavaScript, and React,
                                 allowing him to seamlessly integrate with backend systems. Rupesh is committed to staying
